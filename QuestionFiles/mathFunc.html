@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Method Properties</title>
+</head>
+<body>
+    <h3>Math Methods</h3>
+    <br>
+    <br>
+
+    <script>
+       
+        var a = 100;
+        var b = isFinite(a);
+        document.write("<br><br>")
+        document.write(b)
+
+        var c = Infinity
+        var d = isFinite(c)
+        document.write("<br><br>")
+        document.write(d)
+
+        var e = 20
+        var f = Number.isInteger(e)         //Number is the class that is accessing the isInteger method which is used to check for the integer
+        document.write("<br><br>")
+        document.write(f)
+
+        var g = 5.67891011
+        var h = g.toFixed(4)            //kind of round off function 
+        document.write("<br><br>")
+        document.write(h)
+
+        var g = 5.67891011
+        var h = g.toPrecision(2)            //kind of round off function 
+        document.write("<br><br>")
+        document.write(h)
+
+
+        var i = 5.7
+
+        var j = Math.ceil(i)
+        var k = Math.floor(i)
+        var l = Math.abs(i)
+        var m = Math.sqrt(25)
+        var n = Math.cbrt()
+
+       
+        
+    </script>
+</body>
+</html>

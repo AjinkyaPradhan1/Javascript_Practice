@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Events</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--onClick Event-->
+        <button onClick="alertBox()">Click Button</button>
+       <br>
+         <!--onmouseover Event-->
+        <div id="div1" draggable="true" ondrag="changeColour()" onmouseover="changeColour()" onmouseleave="baseColour()">Hello How are you all. This is onMouseHover Button</div>
+        <!--onsearch-->
+        <input type="search" id="s1" onsearch="searchFunc()">
+        <div id="div2"></div>
+        <br>
+        <!--onfocus-->
+        <input type="search" id="s2" onfocus="focusFunc()" onfocusout="focusExitFunc()">
+        <div id="div3"></div>
+        <!--onmouseover Event-->
+        <div id="div4" ondblclick="changedblColour()" >This is onMousedoubleClick Button</div>
+        <!--onwheel Event-->
+        <div id="div4" wheel="changebgColour" >This is wheel Button</div>
+
+        <!--keydown Event-->
+        <div id="div4" keypress="seeText()" >Press any key to see the magic</div>
+        <input type="text" id="txt1">
+        <div id="div5"></div>
+
+        <script src="main2.js" async defer></script>
+    </body>
+</html>

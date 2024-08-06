@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Fucntion</title>
+</head>
+<body>
+    <!--Map is sued to bifurcate or apply some of the properties to analaze and structure the outputs in a different format as required-->
+    <script>
+        var arr1 = [1,23,45,13,4567]
+
+        var b = arr1.map(changeValues)
+        document.write(b);
+
+        function changeValues(x){
+            return x*24;
+        }
+
+
+        document.write("<br><br><br><br>")
+        var names = [{fname:"Virat",surname:"Kohli"},{fname:"Rohit",surname:"Sharma"},{fname:"Shikhar",surname:"Dhawan"}]
+        //document.write(names)
+        var c = names.map(fullName)
+        document.write(c)
+        function fullName(x){
+            return x.fname +" "+ x.surname  //x is the object and we arte here acccessing the properties of the object i.e fname aand surname
+        }
+        
+    </script>
+</body>
+</html>

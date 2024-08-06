@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Properties</title>
+</head>
+<body>
+    <h3>String Methods</h3>
+    <br>
+    <br>
+
+    <script>
+        var str = "Virat Kohli played an innings of Absolute Brilliance"
+
+        var str1 = str.toLocaleUpperCase()
+        document.write("<br><br>")
+        document.write(str1)
+
+        var str2 = str.toLowerCase()
+        document.write("<br><br>")
+        document.write(str2)
+
+        var str3 = str.length
+        document.write("<br><br>")
+        document.write(str3)
+
+        var str4 = str.includes("Virat")
+        document.write("<br><br>")
+        document.write(str4)
+
+        var str5 = str.startsWith("W")
+        document.write("<br><br>")
+        document.write(str5)
+
+        var str6 = str.endsWith("ce")
+        document.write("<br><br>")
+        document.write(str6)
+
+        var str7 = str.search("an")         //would print the index number where the substring resides
+        document.write("<br><br>")
+        document.write(str7)
+
+        var strName1 = "Jasprit bowled an outstanding over with sheer brilliance and an absoulte show of masterclass";
+        var strMatch = strName1.match(/an/g)        //here g is the global operator expression used in javascrpit to check for the eleementss globally
+        document.write("<br><br>")                  //match would check for all the available expressions present in the string which are similar and would add them as a array
+        document.write(strMatch)
+        
+
+        var str8 = str.indexOf("ce")
+        document.write("<br><br>")
+        document.write(str8)
+
+        var str9 = str.lastIndexOf("ce")
+        document.write("<br><br>")
+        document.write(str9)
+
+        var str10 = str.replace("Virat Kohli","Ajinkya Rahane")
+        document.write("<br><br>")
+        document.write(str10)
+
+        var str11 = str.charAt(7)
+        document.write("<br><br>")
+        document.write(str11)
+
+        var str12 = str.concat(" . ",strName1)          //. is the seperator between the two sentences
+        document.write("<br><br>")
+        document.write(str12)
+
+        var str13 = str.charAt(7)
+        document.write("<br><br>")
+        document.write(str13)
+
+        //var strSpace =  "                  India"
+        //var str14 = strSpace.trim()
+        //document.write("<br><br>")
+        //alert(str14)
+        
+        //String checks for the Ascii code number and prints whatever the letter or character at the specific ascii code is
+        document.write("<br><br>")
+        document.write(String.fromCharCode(65))
+        document.write("<br><br>")
+        document.write(String.fromCharCode(61))
+        document.write("<br><br>")
+        document.write(String.fromCharCode(25))
+        document.write("<br><br>")
+        
+        var str14 = str.split("+")
+        document.write("<br><br>")
+        document.write(str14)
+
+        var str15 = str.repeat(3)
+        document.write("<br><br>")
+        document.write(str15)
+
+        //slice functions prints everything between the required indexes
+
+        var str16 = str.slice(2)
+        document.write("<br><br>")
+        document.write(str16)
+
+        var str17 = str.slice(2,7)
+        document.write("<br><br>")
+        document.write(str17)
+
+        //substr functions prints everything after the given index to the character lenght which is mentioned in the function
+        var str18 = str.substr(2)
+        document.write("<br><br>")
+        document.write(str18)
+
+        var str19 = str.substr(2,7)
+        document.write("<br><br>")
+        document.write(str19)
+
+        var a = 25;
+        var b = 25;
+        var c = a+b;
+        var str20 = c.toString()
+        document.write("<br><br>")
+        document.write(str20+56)
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Operations 2</title>
+</head>
+<body>
+
+    <script>
+        arr2 =  []
+        for(var i=0;i<5;i++){
+            arr2[i] = prompt("Enter element ["+(i+1)+"]: ")
+        }
+        document.write(arr2)
+
+        document.write("<br>")
+        arr2.sort()                 //arrange in ascending order
+        document.write(arr2)
+
+        document.write("<br>")
+        arr2.reverse()              //arrange in reverse order
+        document.write(arr2)
+
+        document.write("<br>")
+        arr2.pop()                  //pop out the last element
+        document.write(arr2)    
+
+        document.write("<br>")
+        arr2.push("Rohit")          //push the element in the last
+        document.write(arr2)
+
+        document.write("<br>")
+        arr2.shift()                //remove the element from the beginning
+        document.write(arr2)
+
+        document.write("<br>")
+        arr2.unshift("Virat")       //add the element in the beginning
+        document.write(arr2)
+
+        document.write("<br>")
+        var b = Array.isArray(arr2)       //check whther the array is Array
+        document.write(b)
+
+        document.write("<br>")
+        var d = arr2.indexOf("Rohit")       //check the index of the element
+        document.write(d)
+
+        document.write("<br>")
+        var c = arr2.lastIndexOf("Rohit")       //check the index of the element from the last or else it starts from the ending as its forst element
+        document.write(c)
+
+        document.write("<br>")
+        var e = arr2.includes("Rohit")       //check the index of the element from the last or else it starts from the ending as its forst element
+        document.write(e)
+
+        document.write("<br>")
+        var f = arr2.some(checkAges);           //returns true if the condition created in the checkAges function at any one time satusfues the given condition
+        function checkAges(num){
+            return num>20;
+        }
+        document.write(f)
+
+        document.write("<br>")
+        var g = arr2.filter(checkNums1);           //returns true if the condition created in the checkNums function at any one time satusfues the given condition
+        function checkNums1(num){
+            return num>20;
+        }
+        document.write(g)
+
+        document.write("<br>")
+        var h = arr2.slice(1)       //prints all the elements next to the 1st index
+        document.write(h)
+
+        document.write("<br>")
+        var i = arr2.splice(2,0,"Shikhar","Jasprit")       //splice('shift by how many indices','how many names or elements to be deleted','name to be inserted in the places between')
+        document.write(i)
+
+        document.write("<br>")
+        var a = ["Shikhar","Rohit","Virat"]
+        var b = ["Surya","Pant","Hardik"]
+        var c = ["Hooda","Jadeja","Bumrah"]
+        var d = ["Arshdeep","Bhuvneshwar"]
+        var e = a.concat(b,c,d)
+        document.write(a)
+
+        //use console.log for debugging the codes written in js on the web
+    </script>
+    
+</body>
+</html>
