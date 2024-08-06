@@ -1,0 +1,7 @@
+1) Join 
+2) push
+3) `` annotations
+4) String functions
+
+To study Tommorrow
+5)map, filter, reduce, lambda function
