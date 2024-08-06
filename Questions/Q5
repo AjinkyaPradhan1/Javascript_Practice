@@ -1,0 +1,4 @@
+console.log("Q5. Return an array of elements where odd numbers are incremented by 1 and even numbers are decremented by 1");
+const array1 = [25,24,26,29,40,42,43];
+const s3 = (elements,index)=>elements%2?elements+1:elements-1;
+console.log(array1.map(s3))

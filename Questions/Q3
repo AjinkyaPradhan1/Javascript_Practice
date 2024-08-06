@@ -1,0 +1,4 @@
+console.log("Q3. Find the biggest number of array: ");
+const array1=[25,24,26,29,40,42,43]
+const max =(acc,current,index)=> current>acc? current:acc;
+console.log(array1.reduce(max,0));

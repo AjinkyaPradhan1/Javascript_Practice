@@ -1,0 +1,4 @@
+console.log("Q4. Find the numbers divisible by 10");
+const array1 = [25,24,26,29,40,42,43];
+const s3 = (elements,index)=>elements%10 ? 0:elements;
+console.log(array1.filter(s3))

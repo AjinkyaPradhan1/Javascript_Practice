@@ -1,0 +1,4 @@
+console.log("Q6. Return an object with sum of all the even and odd numbers seperately");
+const array1 = [25,24,26,29,40,42,43];
+const s4 =(acc,index)=>index % 2===0 ? ({...acc,even:acc.even+index}) : ({...acc,odd:acc.odd +index});
+console.log(array1.reduce(s4,{odd:0,even:0}));
